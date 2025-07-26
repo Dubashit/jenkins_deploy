@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins GitHub Deploy Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #00ff88;
+        }
+        .info-card h3 {
+            margin-top: 0;
+            color: #00ff88;
+        }
+        .status {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .status-badge {
+            background: #00ff88;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Jenkins GitHub Deploy</h1>
+            <p>Автоматизоване розгортання з GitHub через Jenkins CI/CD</p>
+        </div>
+
+        <div class="status">
+            <span class="status-badge">✅ Розгортання успішне!</span>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📋 Проект</h3>
+                <p><strong>Назва:</strong> jenkins_deploy</p>
+                <p><strong>Джерело:</strong> GitHub Repository</p>
+                <p><strong>CI/CD:</strong> Jenkins Pipeline</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🔧 Технології</h3>
+                <p><strong>VCS:</strong> Git + GitHub</p>
+                <p><strong>CI/CD:</strong> Jenkins</p>
+                <p><strong>Deployment:</strong> SSH</p>
+                <p><strong>Web Server:</strong> Apache2</p>
+            </div>
+
+            <div class="info-card">
+                <h3>⚡ Pipeline Етапи</h3>
+                <p>✅ Clone з GitHub</p>
+                <p>✅ Build проекту</p>
+                <p>✅ Тестування</p>
+                <p>✅ Розгортання</p>
+            </div>
+
+            <div class="info-card">
+                <h3>📊 Інформація</h3>
+                <p><strong>Build Date:</strong> $(date)</p>
+                <p><strong>Deployed by:</strong> Jenkins</p>
+                <p><strong>Environment:</strong> Production</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Створено для демонстрації Jenkins CI/CD з GitHub інтеграцією</p>
+            <p>🌟 Automated deployment pipeline working perfectly! 🌟</p>
+        </div>
+    </div>
+</body>
+</html>
